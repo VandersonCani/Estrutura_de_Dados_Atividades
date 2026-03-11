@@ -57,14 +57,19 @@ class ListaDupla {
 
 
 
+// inicia uma nova instancia de uma lista duplamente encadeada
 const lista = new ListaDupla();
 
+// insere dados na nova lista
 lista.inserirInicio(10);
 lista.inserirInicio(20);
 lista.inserirInicio(30);
 
+// mostra dados da lista da frente para trás na sequencia 
 console.log("Frente:");
 lista.percorrerFrente();
-
+// percore a lista de trá pra frente na sequencia.
 console.log("Tras:");
 lista.percorrerTras();
+
+// observação, como os dados foram adicionadosna sequencia 10 , 20 , 30, a lista puca na frente o ultimo dado adicionado, então considerasse como frente sempre o ultimo dado adicionado, e como trás o primeiro dado adicionado.
