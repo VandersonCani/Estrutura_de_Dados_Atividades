@@ -18,6 +18,7 @@ class FilaCircular {
 
     // essa função é usada para verificar se a fila está cheia, nessa etapa comparamos os ponteiros do front e do rear, lembre-se quando adicionamos um item ao array adicionamos através do Rear, inicialmente o front e rear apontam para a mesma pessoa, depois os ponteiros se separam e o rear não pode "alcançar" o front no loop.
     isFull () {
+        // para facilitar ainda mais o entendimento dessa etapa, vejamos, após o simbolo de igual (===) temos exatamente a equação que resolve o rear, isso significa que quando o front for igual a resolução do rear, essa função retorna um valor booleano, quando esse valor for true, ou seja, o front e o rear forem valores iguais, entende-se então que a fila está cheia.
         return (this.front === (this.rear + 1) % this.tamanho);
     }
 
@@ -82,3 +83,5 @@ fila.enqueue(50);
 fila.enqueue(60);
 
 console.log(fila.itens);
+
+// apenas uma observação final, quando se pensa que a comparação de fila cheia compara se os valores são iguais e entende-se então que a fila está cheia, porém ao comparar fila vaiza os valores também são iguais de front e rear, como sabemos então qual é qual? aqui entra o conceito do depende, depende de onde partimos, por exemplo o rear não pode circular e alcançar o valor igual ao do front, que ai então entendemos que a fila está cheia. porém o front pode avançar até encontrar o rear, chegando então ao ultimo valor da fila, deixando os valores de front e rear iguais novamente. 
