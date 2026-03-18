@@ -19,11 +19,42 @@ function inOrder(no) {
     // chamada recursiva esquerda
     inOrder(no.esquerda)
 
-    // processamendo do nó
+    // processamento do nó
     console.log(no.valor)
 
     // chamada recursiva direita
     inOrder(no.direita)
+}
+
+// função que determina a leitura do codigo InOrder, no caso da esquerda > raiz > direita
+function preOrder(no) {
+    // finalização da leitura quando encontrar que no estiver igual null 
+    if(no === null){
+        return
+    }
+    // mostrar o valor do nó
+    console.log(no.valor)
+
+    // chama função preOrder com o nó da esquerda
+    preOrder(no.esquerda)
+
+    // chama função preOrder com o nó da direita
+    preOrder(no.direita)
+}
+
+function postOrder(no) {
+    // finalização da leitura quando encontrar que no estiver igual null 
+    if(no === null){
+        return
+    }
+    // chama o valor do nó a esquerda
+    postOrder(no.esquerda)
+
+    // chama função postOrder com o nó da direita
+    postOrder(no.direita)
+
+    // mostra o valor do nó(raiz)
+    console.log(no.valor)
 }
 
 //declaração do topo da arvore
@@ -49,6 +80,11 @@ raiz.direita.direita = new Node(7)
 //    / \   / \
 //   1   3 5   7
 
+console.log("inOrder:")
 inOrder(raiz)
 
+console.log("PreOrder:")
+preOrder(raiz)
 
+console.log("PostOrder:")
+postOrder(raiz)
