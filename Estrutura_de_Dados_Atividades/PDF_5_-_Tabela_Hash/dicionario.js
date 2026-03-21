@@ -1,3 +1,20 @@
+/* Exercício 5 — Implementação de Dicionário com Tabela Hash
+
+Neste exercício foi implementado um dicionário utilizando tabela hash com encadeamento para tratamento de colisões.
+
+A função hash é responsável por transformar a palavra (chave) em um índice da tabela, permitindo acesso direto aos dados. Quando ocorre colisão (duas palavras gerando o mesmo índice), os elementos são armazenados em uma lista dentro da mesma posição da tabela.
+
+Foram implementadas as operações principais:
+
+* Inserção (adicionar palavras e significados)
+* Busca (recuperar significado a partir da palavra)
+* Remoção (excluir palavras do dicionário)
+
+A estrutura funciona de forma semelhante a um sistema de armazenamento simples, onde a chave (palavra) permite acesso rápido ao valor (significado), com complexidade média O(1).
+
+Este exercício demonstra na prática o uso de tabelas hash em aplicações reais, como dicionários, caches e sistemas de busca rápida, sendo também base para conceitos utilizados em áreas como banco de dados e cibersegurança.
+ */
+
 // tamanho da tabela
 const TAMANHO = 10
 
