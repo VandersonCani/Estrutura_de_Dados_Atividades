@@ -159,3 +159,16 @@ console.log("Union 0-2:", ufTeste.union(0, 2)) // false → ciclo
 // 1-2 → conecta
 // 0-2 → já estão conectados → ciclo → retorna false
 
+/*   (4)                Entre Parenteses está o PESO
+ 0 -------- 1
+ | \      / |
+ |  \    /  |
+ |   \  /   |
+(3)  (1)   (2)
+ |    \/     \
+ |    /\      \
+ |   /  \      \
+ 2 -------- 3 ---- 4 ---- 5
+      (4)      (2)    (6) */
+
+      // No Kruskal, os menores pesos são escolhidos primeiro.

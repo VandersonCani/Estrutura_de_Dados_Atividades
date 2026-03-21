@@ -1,0 +1,7 @@
+Árvores B são amplamente utilizadas em bancos de dados e sistemas de arquivos para indexação de dados.
+
+Devido à sua estrutura, onde cada nó armazena múltiplos valores, elas reduzem a altura da árvore e, consequentemente, a quantidade de acessos ao disco necessários para encontrar uma informação.
+
+Isso torna as operações de busca, inserção e remoção mais eficientes em grandes volumes de dados, sendo ideais para sistemas que trabalham com armazenamento persistente.
+
+Exemplos de uso incluem índices de bancos de dados relacionais e sistemas de arquivos modernos.
