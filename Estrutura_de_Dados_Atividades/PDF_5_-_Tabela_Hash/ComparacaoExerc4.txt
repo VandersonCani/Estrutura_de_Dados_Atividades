@@ -1,0 +1,13 @@
+Encadeamento:
+Utiliza listas para armazenar múltiplos elementos no mesmo índice em caso de colisão.
+Apresenta melhor desempenho quando há muitas colisões, pois não depende de encontrar espaços livres na tabela.
+
+Endereçamento Aberto (Probing Linear):
+Não utiliza listas, armazena todos os elementos diretamente no vetor.
+Em caso de colisão, busca a próxima posição livre.
+Pode ter desempenho reduzido quando a tabela está muito cheia.
+
+Conclusão:
+O encadeamento é mais eficiente em cenários com muitas colisões,
+enquanto o probing linear é mais simples e utiliza menos memória,
+porém sofre com alta taxa de ocupação da tabela.
